@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Застосунок пошуку фільмів</h1>
+
+        <nav class="navbar-menu">
+          <ul class="navbar-menu__list">
+            <li class="navbar-menu__item"><a class="nav-link" href="#">Категорія</a></li>
+            <li class="navbar-menu_item"><a class="nav-link" href="#">Збережені</a></li>
+            <li class="navbar-menu_item"><a class="nav-link" href="#">Головна</a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+    
+        <div class="search">
+    
+          <div class="search__group search__group--input">
+            <label for="search" class="search__label-input">Щоб почати пошук, введіть назву фільму</label>
+            <input id="search" type="text" class="search__input" placeholder="Назва фільму">
+          </div>
+    
+          <div class="search__group search__group--checkbox">
+            <input id="checkbox" type="checkbox" class="search__checkbox">
+            <label for="checkbox" class="search__label-checkbox">Додавати фільми до вже існуючого списку</label>
+          </div>
+    
+        </div>
+    
+        <div class="movies" id="movies-list"></div>
+    
+    
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/7.8.1/rxjs.umd.min.js"></script>
+    <script src="main.js" type="module"></script>
+
+</body>
+</html>
